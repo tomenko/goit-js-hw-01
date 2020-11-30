@@ -7,13 +7,12 @@ const australia = 170;
 const india = 80;
 const jamaica = 120;
 
-switch (country) {
-  case null:
-    country = 'Отменено пользователем!';
-    break;
+if (country === null) { country = prompt('Отменено пользователем!') }
+
+switch (country.toLowerCase()) {
     
   case 'китай':
-    country = `Доставка в Китай будет стоить ${china} кредитов.`;
+    country = `Доставка в Китай будет стоить ${china} кредитов.`; 
     break;
     
   case 'чили':
