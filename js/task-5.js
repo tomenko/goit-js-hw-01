@@ -7,9 +7,7 @@ const australia = 170;
 const india = 80;
 const jamaica = 120;
 
-if (country === null) { country = prompt('Отменено пользователем!') }
-
-switch (country.toLowerCase()) {
+if (country === null) { country = prompt('Отменено пользователем!') } else  { switch (country.toLowerCase()) {
     
   case 'китай':
     country = `Доставка в Китай будет стоить ${china} кредитов.`; 
@@ -31,7 +29,7 @@ switch (country.toLowerCase()) {
     country = `Доставка в Ямайку будет стоить ${jamaica} кредитов.`;
     break;
 
-  default: country = 'В вашей стране доставка не доступна.';
+  default: country = 'В вашей стране доставка не доступна.'; }
 }
 
 alert(country);
